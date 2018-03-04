@@ -1,0 +1,11 @@
+export const START_LOGIN_USER = 'START_LOGIN_USER';
+
+export const ERROR_LOGIN_USER = 'ERROR_LOGIN_USER';
+
+export const COMPLETE_LOGIN_USER = 'COMPLETE_LOGIN_USER';
+
+export const LOGOUT_USER = 'LOGOUT_USER';
+
+export const IS_LOGGED = 'IS_LOGGED';
+
+export const GET_EVENTS = 'GET_EVENTS';
