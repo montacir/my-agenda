@@ -6,7 +6,7 @@ const Header = () => (
             <a href="index-2.html">
                 <img src="img/logo-icon.png" alt=""/>
 
-                <span className="brand-name">SlickLab</span>
+                <span className="brand-name">Agenda</span>
             </a>
         </div>
 
@@ -245,7 +245,7 @@ const Header = () => (
                                 </span> Billy Jones
                                     <small> 2 Days Ago</small>
                                     <p>
-                                        <small>Slicklab is awesome Dashboard</small>
+                                        <small>Hello</small>
                                     </p>
                                     <span className="read tooltips" data-original-title="Mark as Unread"
                                           data-toggle="tooltip" data-placement="left">
@@ -447,7 +447,7 @@ const Header = () => (
             <div className="right-notification">
                 <ul className="notification-menu">
                     <li>
-                        <form className="search-content" action="http://thevectorlab.net/slicklab/index.html"
+                        <form className="search-content"
                               method="post">
                             <input type="text" className="form-control" name="keyword" placeholder="Search..."/>
                         </form>

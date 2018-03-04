@@ -7,7 +7,7 @@ const Sidebar = () => (
                 <a href="index-2.html">
                     <img src="img/logo-icon.png" alt="" />
                     
-                    <span className="brand-name">SlickLab</span>
+                    <span className="brand-name">Agenda</span>
                 </a>
             </div>
             

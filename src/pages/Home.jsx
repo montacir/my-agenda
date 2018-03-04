@@ -5,7 +5,7 @@ const HomeHead = () =>(
         <h3>
             Dashboard
         </h3>
-        <span className="sub-title">Welcome to SlickLab dashboard</span>
+        <span className="sub-title">Welcome to dashboard</span>
         <div className="state-information">
             <div className="state-graph">
                 <div id="balance" className="chart"></div>
