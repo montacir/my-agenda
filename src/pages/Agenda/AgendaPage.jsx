@@ -1,9 +1,10 @@
-import React from 'react';
-import Calendar from './Calendar.jsx';
-import EventManagement from './EventManagement.jsx';
-import EventForm from './EventForm.jsx';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
+import Calendar from './Calendar';
+import EventManagement from './EventManagement';
+import EventForm from './EventForm';
+import * as actions from '../../actions';
 
 const AgendaHeader = () => (
     <div className="page-head">
@@ -26,8 +27,7 @@ const AgendaBody = ({events_types, events}) => (<div className="wrapper">
 
         <div className="row">
             <aside className="col-lg-3">
-
-
+                <EventForm/>
                 <EventManagement events_types={events_types}/>
 
             </aside>
@@ -43,11 +43,24 @@ const AgendaBody = ({events_types, events}) => (<div className="wrapper">
     </div>
 );
 
-const AgendaPage = ({events_types, events}) => [
-    <AgendaHeader key={"header"}/>,
-    <AgendaBody key={"body"} events_types={events_types} events={events}  />
-];
-const mapStateToProps = ({root:{events_types,events}}) => ({events_types, events});
+class AgendaPage extends Component{
+    componentDidMount() {
+        this.props.getEventTypes();
+        this.props.getEvents();
+    }
+
+    render() {
+        const {events_types, events} = this.props;
+        console.log('AgendaPage',events_types);
+        return (<AgendaBody events_types={events_types} events={events}/>);
+    }
+}
 
 
-export default connect(mapStateToProps)(AgendaPage);
+const mapStateToProps = ({events}) => {
+    const {events_types} = events;
+    return {events_types,events: events.events};
+};
+
+
+export default connect(mapStateToProps,actions)(AgendaPage);

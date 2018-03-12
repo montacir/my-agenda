@@ -1,4 +1,4 @@
-import AgendaPage from './AgendaPage.jsx';
+import AgendaPage from './AgendaPage';
 
 
 export default AgendaPage;

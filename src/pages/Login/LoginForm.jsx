@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {reduxForm, Field, getFormValues} from 'redux-form';
+import {reduxForm, Field} from 'redux-form';
 
 class TextInput extends Component {
     render() {
@@ -21,19 +21,18 @@ class TextInput extends Component {
 }
 
 class LoginForm extends Component {
-    constructor(props) {
-        super(props);
-    }
-    login(data){
+
+    login(data) {
         this.props.login(data);
     }
 
     render() {
-        const {handleSubmit, pristine, reset, submitting} = this.props;
-
+        const {handleSubmit, hasError, submitting} = this.props;
+        console.log(' this.props', this.props);
         return (
             <div className="container log-row">
                 <form className="form-signin" onSubmit={handleSubmit(this.login.bind(this))}>
+                    {hasError && <strong className={"error"}>Account doesn't exist</strong>}
                     <div className="login-wrap">
                         <Field
                             name="email" type="text" className="form-control" label="User ID" autoFocus
@@ -96,11 +95,8 @@ const isEmail = value =>
         : undefined;
 
 
-const mapStateToProps = (state) => (getFormValues('loginForm')(state));
 
 export default reduxForm({
-        form: 'loginForm',
-    },
-    mapStateToProps
-)
-(LoginForm);
+        form: 'loginForm'
+    }
+)(LoginForm);

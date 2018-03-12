@@ -1,10 +1,8 @@
 # My Agenda project
-Mini project  including fullcalendar and jquery-ui draggable plugin with ReactJs.
+Mini project  including fullcalendar and jquery-ui draggable plugin with ReactJs & NodeJs & MongoDB.
 
 Todo Later:
 
-1.Authentication.
+1.Sign up.
 
-2.Server Side with NodeJs & MongoDB.
-
-3.Saving Events in Server.
+2.Updating events in calendar.

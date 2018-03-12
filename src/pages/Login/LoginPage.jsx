@@ -17,8 +17,8 @@ class LoginPage extends Component {
 
         return (
             [
-                <h2 className="form-heading"> login </h2>,
-                <LoginForm login={this.props.login}/>
+                <h2 className="form-heading" key={"title"}> login </h2>,
+                <LoginForm login={this.props.login} key={"login"} hasError={this.props.isError && this.props.isFetching}/>
             ]
         );
 

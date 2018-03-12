@@ -1,4 +1,4 @@
-import Home from './Home.jsx';
+import Home from './Home';
 import AgendaPage from './Agenda';
 
 export {AgendaPage};

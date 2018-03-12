@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
 const Sidebar = () => (
 	<div key="sidebar" className="sidebar-left">
@@ -24,7 +24,7 @@ const Sidebar = () => (
                     </li>
                     <li className="active"><a href="index-2.html"><i className="fa fa-home"></i> <span>Dashboard</span></a></li>
                     <li className="menu-list">
-                        <a href="#"><i className="fa fa-laptop"></i>  <span>Layouts</span></a>
+                        <a href="true"><i className="fa fa-laptop"></i>  <span>Layouts</span></a>
                         <ul className="child-list">
                             <li><a href="boxed-layout.html"> Boxed Page</a></li>
                             <li><a href="collapsed-menu.html"> Sidebar Collapsed</a></li>
@@ -32,7 +32,7 @@ const Sidebar = () => (
                             <li><a href="different-theme-layouts.html"> Different Theme Layouts</a></li>
                         </ul>
                     </li>
-                    <li className="menu-list"><a href="#"><i className="fa fa-book"></i> <span>UI Elements</span></a>
+                    <li className="menu-list"><a href="true"><i className="fa fa-book"></i> <span>UI Elements</span></a>
                         <ul className="child-list">
                             <li><a href="general.html"> BS Elements</a></li>
                             <li><a href="buttons.html"> Buttons</a></li>
@@ -48,7 +48,7 @@ const Sidebar = () => (
                     <li>
                         <h3 className="navigation-title">Components</h3>
                     </li>
-                    <li className="menu-list"><a href="#"><i className="fa fa-cogs"></i> <span>Components <span className="badge noti-arrow bg-success pull-right">3</span> </span></a>
+                    <li className="menu-list"><a href="true"><i className="fa fa-cogs"></i> <span>Components <span className="badge noti-arrow bg-success pull-right">3</span> </span></a>
                         <ul className="child-list">
                             <li><a href="grid.html"> Grids</a></li>
                             <li><a href="calendar.html"> Calendar</a></li>
@@ -64,7 +64,7 @@ const Sidebar = () => (
                         </ul>
                     </li>
 
-                    <li className="menu-list"><a href="#"><i className="fa fa-tasks"></i> <span>Forms</span></a>
+                    <li className="menu-list"><a href="true"><i className="fa fa-tasks"></i> <span>Forms</span></a>
                         <ul className="child-list">
                             <li><a href="form-layout.html"> Form Layouts</a></li>
                             <li><a href="advanced-components.html"> Advanced Components</a></li>
@@ -74,7 +74,7 @@ const Sidebar = () => (
                         </ul>
                     </li>
 
-                    <li className="menu-list"><a href="#"><i className="fa fa-bar-chart-o"></i> <span>Charts </span></a>
+                    <li className="menu-list"><a href="true"><i className="fa fa-bar-chart-o"></i> <span>Charts </span></a>
                         <ul className="child-list">
                             <li><a href="flot-chart.html"> Flot Charts</a></li>
                             <li><a href="morris-chart.html"> Morris Charts</a></li>
@@ -100,7 +100,7 @@ const Sidebar = () => (
                         </ul>
                     </li>
 
-                    <li className="menu-list"><a href="#"><i className="fa fa-file-text"></i> <span>Extra Pages</span></a>
+                    <li className="menu-list"><a href="true"><i className="fa fa-file-text"></i> <span>Extra Pages</span></a>
                         <ul className="child-list">
                             <li><a href="profile.html"> Profile</a></li>
                             <li><a href="invoice.html"> Invoice</a></li>
@@ -171,7 +171,7 @@ const RightSideBar = () => (
                         <div className="chat-list">
                             <h3>Chat list</h3>
                             <h5>34 Friends Online, 80 Offline</h5>
-                            <a href="#" className="add-people tooltips" data-original-title="Add People" data-toggle="tooltip" data-placement="left">
+                            <a href="true" className="add-people tooltips" data-original-title="Add People" data-toggle="tooltip" data-placement="left">
                                 <i className="fa fa-plus"></i>
                             </a>
                         </div>
@@ -184,7 +184,7 @@ const RightSideBar = () => (
 
                         <ul className="team-list chat-list-side">
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img2.jpg" alt="" />
                                 <i className="online dot"></i>
@@ -198,7 +198,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img3.jpg" alt="" />
                                 <i className="online dot"></i>
@@ -212,7 +212,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img1.jpg" alt="" />
                                 <i className="away dot"></i>
@@ -226,7 +226,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img3.jpg" alt=""/>
                                 <i className="busy dot"></i>
@@ -240,7 +240,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img2.jpg" alt=""/>
                                 <i className="online dot"></i>
@@ -264,7 +264,7 @@ const RightSideBar = () => (
                         </div>
                         <ul className="team-list chat-list-side">
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img2.jpg" alt=""/>
                                 <i className="offline dot"></i>
@@ -278,7 +278,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img3.jpg" alt=""/>
                                 <i className="offline dot"></i>
@@ -292,7 +292,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img1.jpg" alt=""/>
                                 <i className="offline dot"></i>
@@ -306,7 +306,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img3.jpg" alt=""/>
                                 <i className="offline dot"></i>
@@ -320,7 +320,7 @@ const RightSideBar = () => (
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="true">
                                         <span className="thumb-small">
                                 <img className="circle" src="img/img2.jpg" alt=""/>
                                 <i className="offline dot"></i>
@@ -354,7 +354,7 @@ const RightSideBar = () => (
             <div className="aside-widget">
                 <div className="side-title-alt">
                     <h2>Revenue</h2>
-                    <a href="#" className="close side-w-close">
+                    <a href="true" className="close side-w-close">
                         <i className="fa fa-times"></i>
                     </a>
                 </div>
@@ -410,7 +410,7 @@ const RightSideBar = () => (
 
                 <div className="side-title-alt">
                     <h2>Statistics</h2>
-                    <a href="#" className="close side-w-close">
+                    <a href="true" className="close side-w-close">
                         <i className="fa fa-times"></i>
                     </a>
                 </div>
@@ -454,7 +454,7 @@ const RightSideBar = () => (
             <div className="aside-widget">
                 <div className="side-title-alt">
                     <h2>Notification</h2>
-                    <a href="#" className="close side-w-close">
+                    <a href="true" className="close side-w-close">
                         <i className="fa fa-times"></i>
                     </a>
                 </div>
@@ -490,7 +490,7 @@ const RightSideBar = () => (
 
             <div className="side-title-alt">
                     <h2>System</h2>
-                    <a href="#" className="close side-w-close">
+                    <a href="true" className="close side-w-close">
                         <i className="fa fa-times"></i>
                     </a>
                 </div>
@@ -518,7 +518,7 @@ const RightSideBar = () => (
             <div className="aside-widget">
                 <div className="side-title-alt">
                     <h2>Work Progress</h2>
-                    <a href="#" className="close side-w-close">
+                    <a href="true" className="close side-w-close">
                         <i className="fa fa-times"></i>
                     </a>
                 </div>
