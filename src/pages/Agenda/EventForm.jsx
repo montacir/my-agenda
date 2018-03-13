@@ -5,12 +5,12 @@ import * as actions from '../../actions';
 
 class EventForm extends Component {
     addEventType = () => {
-        this.props.addEventType(this.props.name);
+        if (this.props.name !== '')
+            this.props.addEventType(this.props.name);
     }
     setEventTypeName = (event) => {
         event.preventDefault();
-        if (event.target.value.trim() !== '')
-            this.props.setEventTypeName(event.target.value);
+        this.props.setEventTypeName(event.target.value);
     }
 
     render() {
